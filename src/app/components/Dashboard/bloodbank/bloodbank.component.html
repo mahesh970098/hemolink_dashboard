@@ -1,0 +1,95 @@
+<div>
+  <h4 style="font-size: 12px;color: red;">Dashboard > Blood Form</h4>
+</div>
+
+<div class="container container-style">
+  <div class="right-side">
+    <form (ngSubmit)="login()">
+
+      <!-- <div style="display: flex;flex-direction: row;justify-content:space-evenly;"> -->
+      <div>
+        <label for="main_name">Heading Name</label>
+        <input placeholder="Enter Heading" type="text" id="main_name" name="main_name" [(ngModel)]="main_name"
+          required />
+      </div>
+      <div>
+        <label for="Sub_main_name">Sub-Heading Name</label>
+        <input placeholder="Enter Heading" type="text" id="Sub_main_name" name="Sub_main_name" [(ngModel)]="Sub_main_name"
+          required />
+      </div>
+      <!-- </div> -->
+      <div style="display: flex;flex-direction: row;justify-content:space-between">
+        <div>
+          <label for="email">Enter Mail</label>
+          <input placeholder="Enter Heading" type="email" id="email" name="email" [(ngModel)]="email"
+            required />
+        </div>
+        <div>
+          <label for="rating">Rating</label>
+          <input placeholder="Enter Heading" type="text" id="rating" name="rating" [(ngModel)]="rating"
+            required />
+        </div>
+      </div>
+      <div style="display: flex;flex-direction: row;justify-content:space-between">
+        <div>
+          <label for="number1">Phone number *</label>
+          <input placeholder="Enter Phone Number" type="number" id="number1" name="number1" [(ngModel)]="number1"
+            required />
+        </div>
+        <div>
+          <label for="number2">Phone number</label>
+          <input placeholder="Enter Heading" type="number" id="number2" name="number2" [(ngModel)]="number2"
+            required />
+        </div>
+      </div>
+
+      <div style="display: flex;flex-direction: row;justify-content:space-between">
+        <div>
+          <label for="plink">Policy Link</label>
+          <input placeholder="Enter Heading" type="text" id="plink" name="plink" [(ngModel)]="plink"
+            required />
+        </div>
+        <div>
+          <label for="timing">Timings</label>
+          <input placeholder="Enter Timings" type="text" id="timing" name="timing" [(ngModel)]="timing"
+            required />
+        </div>
+      </div>
+      <div style="display: flex;flex-direction: row;justify-content:space-between">
+        <div>
+          <label for="year">Year of Established</label>
+          <input placeholder="Enter Year of Established" type="text" id="year" name="year" [(ngModel)]="year"
+            required />
+        </div>
+        <div>
+          <label for="photo">Upload photo</label>
+          <input placeholder="Enter photo" type="file" id="photo" name="photo" [(ngModel)]="photo" (change)="onFileSelected($event)"
+            required />
+        </div>
+      </div>
+
+      <div>
+        <label for="location">Location</label>
+        <textarea placeholder="Enter Location" type="text" id="location" name="location" [(ngModel)]="location"
+          required></textarea>
+      </div>
+      <div>
+        <label for="about">About Us</label>
+        <textarea placeholder="Enter About us" type="text" id="about" name="about" [(ngModel)]="about"
+          required></textarea>
+      </div>
+
+
+      <div style="display: flex;flex-direction: row;justify-content:space-evenly;">
+        <button type="submit" class="login-btn">Submit</button>
+      </div>
+
+      <div class="links">
+        <!-- <a href="#">Forgot password?</a>
+        <a href="#">Do not have an account?</a> -->
+      </div>
+    </form>
+
+  </div>
+
+</div>

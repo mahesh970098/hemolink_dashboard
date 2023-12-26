@@ -1,0 +1,82 @@
+.container-style{
+  width: 70%;
+}
+input {
+  width: 100%;
+  padding: 9px 10px;
+  border: 2px solid #797979;
+  outline: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  /* margin: 4px 0 18px; */
+  font-size: 0.85rem;
+  /* font-weight: 600; */
+  transition: all 0.5s;
+}
+
+input:focus {
+  border: 2px solid #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea{
+  width: 100%;
+  padding: 9px 10px;
+  border: 2px solid #797979;
+  outline: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  /* margin: 4px 0 18px; */
+  font-size: 0.85rem;
+  /* font-weight: 600; */
+  transition: all 0.5s;
+}
+
+textarea:focus {
+  border: 2px solid #000;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+label {
+  /* font-weight: 600; */
+  font-size: 8px;
+}
+
+/* Login Button */
+
+.login-btn {
+  width: 70%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 24px;
+  margin: 12px 0 24px;
+  border: 2px solid #6b7280;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn:hover {
+  background-color: #000;
+  color: #eee;
+}
