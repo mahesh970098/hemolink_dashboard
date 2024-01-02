@@ -1,3 +1,4 @@
+@import url('../home-screen/Animation.css');
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 *,
@@ -17,6 +18,13 @@
   width: 100%;
   background: #222431;
   padding: 40px 20px;
+
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
 
 /* Snow */
@@ -42,7 +50,7 @@ main {
 .left-side {
   height: 100%;
   width: 100%;
-  background-image: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/64ef8d9a-9202-4543-b838-82f4c7c91ccf);
+  background-image: url('../../../assets/images/teddy.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

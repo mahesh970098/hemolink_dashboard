@@ -1,0 +1,18 @@
+
+
+.carddata{
+  display: flex;
+  align-items: center;
+  align-content: center;
+justify-content: center;
+  flex-direction: column;
+
+};
+link{
+  display: flex;
+  align-items: center;
+  align-content: center;
+justify-content: center;;
+
+
+}

@@ -5,7 +5,6 @@
 <div class="container container-style">
   <div class="right-side">
     <form (ngSubmit)="login()">
-
       <!-- <div style="display: flex;flex-direction: row;justify-content:space-evenly;"> -->
       <div>
         <label for="main_name">Heading Name</label>
@@ -14,20 +13,18 @@
       </div>
       <div>
         <label for="Sub_main_name">Sub-Heading Name</label>
-        <input placeholder="Enter Heading" type="text" id="Sub_main_name" name="Sub_main_name" [(ngModel)]="Sub_main_name"
-          required />
+        <input placeholder="Enter Sub-Heading" type="text" id="Sub_main_name" name="Sub_main_name"
+          [(ngModel)]="Sub_main_name" required />
       </div>
       <!-- </div> -->
       <div style="display: flex;flex-direction: row;justify-content:space-between">
         <div>
           <label for="email">Enter Mail</label>
-          <input placeholder="Enter Heading" type="email" id="email" name="email" [(ngModel)]="email"
-            required />
+          <input placeholder="Enter Mail" type="email" id="email" name="email" [(ngModel)]="email" required />
         </div>
         <div>
           <label for="rating">Rating</label>
-          <input placeholder="Enter Heading" type="text" id="rating" name="rating" [(ngModel)]="rating"
-            required />
+          <input placeholder="Enter Rating " type="text" id="rating" name="rating" [(ngModel)]="rating" required />
         </div>
       </div>
       <div style="display: flex;flex-direction: row;justify-content:space-between">
@@ -38,21 +35,18 @@
         </div>
         <div>
           <label for="number2">Phone number</label>
-          <input placeholder="Enter Heading" type="number" id="number2" name="number2" [(ngModel)]="number2"
+          <input placeholder="Enter Phone Number" type="number" id="number2" name="number2" [(ngModel)]="number2"
             required />
         </div>
       </div>
-
       <div style="display: flex;flex-direction: row;justify-content:space-between">
         <div>
           <label for="plink">Policy Link</label>
-          <input placeholder="Enter Heading" type="text" id="plink" name="plink" [(ngModel)]="plink"
-            required />
+          <input placeholder="Enter Policy link" type="text" id="plink" name="plink" [(ngModel)]="plink" required />
         </div>
         <div>
           <label for="timing">Timings</label>
-          <input placeholder="Enter Timings" type="text" id="timing" name="timing" [(ngModel)]="timing"
-            required />
+          <input placeholder="Enter Timings" type="text" id="timing" name="timing" [(ngModel)]="timing" required />
         </div>
       </div>
       <div style="display: flex;flex-direction: row;justify-content:space-between">
@@ -63,8 +57,8 @@
         </div>
         <div>
           <label for="photo">Upload photo</label>
-          <input placeholder="Enter photo" type="file" id="photo" name="photo" [(ngModel)]="photo" (change)="onFileSelected($event)"
-            required />
+          <input placeholder="Enter photo" type="file" id="photo" name="photo" [(ngModel)]="photo"
+            (change)="onFileSelected($event)" required />
         </div>
       </div>
 

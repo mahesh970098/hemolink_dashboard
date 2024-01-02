@@ -34,10 +34,18 @@
   </button>
   <h1 class="example-app-name">Dashboard</h1>
 </div>
-  <div class="profile-info">
+  <!-- <div class="profile-info">
     <mat-icon class="profile-icon">account_circle</mat-icon>
     <span class="welcome-text">Welcome Admin!</span>
+  </div> -->
+  <div class="profile-info" [matMenuTriggerFor]="profileMenu">
+    <mat-icon class="profile-icon">account_circle</mat-icon>
+    <span class="welcome-text">Welcome, User!</span>
   </div>
+  <mat-menu #profileMenu="matMenu">
+    <button mat-menu-item (click)="logout()">Logout</button>
+    <!-- Add more options if needed -->
+  </mat-menu>
 </mat-toolbar>
 <mat-sidenav-container class="example-container" autosize>
   <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"

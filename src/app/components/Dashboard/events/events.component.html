@@ -1,1 +1,41 @@
-<p>events works!</p>
+<div>
+  <h4 style="font-size: 12px;color: red;">Dashboard > Events</h4>
+</div>
+
+<div class="container container-style">
+  <div class="right-side">
+    <form (ngSubmit)="login()">
+      <!-- <div style="display: flex;flex-direction: row;justify-content:space-evenly;"> -->
+      <div>
+        <label for="name">Name</label>
+        <input placeholder="Enter Heading" type="text" id="name" name="name" [(ngModel)]="name"
+          required />
+      </div>
+
+
+      <div>
+        <label for="photo">Upload photo</label>
+        <input placeholder="Enter photo" type="file" id="photo" name="photo" [(ngModel)]="photo"
+          (change)="onFileSelected($event)" required />
+      </div>
+
+      <div>
+        <label for="description">Description</label>
+        <textarea placeholder="Enter description" type="text" id="description" name="description" [(ngModel)]="description"
+          required></textarea>
+      </div>
+
+
+      <div style="display: flex;flex-direction: row;justify-content:space-evenly;">
+        <button type="submit" class="login-btn">Submit</button>
+      </div>
+
+      <div class="links">
+        <!-- <a href="#">Forgot password?</a>
+        <a href="#">Do not have an account?</a> -->
+      </div>
+    </form>
+
+  </div>
+
+</div>

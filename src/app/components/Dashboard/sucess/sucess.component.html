@@ -1,1 +1,56 @@
-<p>sucess works!</p>
+
+
+<table mat-table [dataSource]="dataSource">
+  <!-- Position Column -->
+  <ng-container matColumnDef="userid">
+    <th mat-header-cell *matHeaderCellDef> userid </th>
+    <td mat-cell *matCellDef="let element"> {{element.userid}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="user_name">
+    <th mat-header-cell *matHeaderCellDef> user Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.user_name}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="email">
+    <th mat-header-cell *matHeaderCellDef> Email </th>
+    <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="blood_group">
+    <th mat-header-cell *matHeaderCellDef> Blood Group </th>
+    <td mat-cell *matCellDef="let element"> {{element.blood_group}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="role">
+    <th mat-header-cell *matHeaderCellDef> Role </th>
+    <td mat-cell *matCellDef="let element"> {{element.role}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="city">
+    <th mat-header-cell *matHeaderCellDef> city </th>
+    <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+  </ng-container>
+    <!-- Weight Column -->
+    <ng-container matColumnDef="state">
+      <th mat-header-cell *matHeaderCellDef> state </th>
+      <td mat-cell *matCellDef="let element"> {{element.state}} </td>
+    </ng-container>
+      <!-- Weight Column -->
+  <ng-container matColumnDef="phone_no">
+    <th mat-header-cell *matHeaderCellDef> phone_no </th>
+    <td mat-cell *matCellDef="let element"> {{element.phone_no}} </td>
+  </ng-container>
+
+
+  <!-- Row definition -->
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+</table>
+<mat-paginator [pageSize]="10" [pageSizeOptions]="[10, 25, 50, 100]"></mat-paginator>
+

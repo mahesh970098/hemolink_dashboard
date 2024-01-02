@@ -8,9 +8,11 @@ import { EventsComponent } from './components/Dashboard/events/events.component'
 import { BloodbankComponent } from './components/Dashboard/bloodbank/bloodbank.component';
 import { PostComponent } from './components/Dashboard/post/post.component';
 import { SucessComponent } from './components/Dashboard/sucess/sucess.component';
+import { HomeScreenComponent } from './components/home-screen/home-screen.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/homescreen', pathMatch: 'full' },
+  { path: 'homescreen', component: HomeScreenComponent },
   { path: 'login', component: LoginComponent },
   {
     path: 'dashboard',

@@ -25,4 +25,9 @@ export class DashboardComponent {
       this.isShowing = false;
     }
   }
+
+  logout() {
+    // Perform logout functionality here
+    // Redirect or perform necessary logout operations
+  }
 }
